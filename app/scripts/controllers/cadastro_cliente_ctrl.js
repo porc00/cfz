@@ -31,7 +31,7 @@ angular.module('frontendApp')
 
             $scope.excluirCliente = function(cliente) {
                 ClienteService.excluirCliente(cliente);
-                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' cadastrado com sucesso.');
+                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' excluido com sucesso.');
                 $location.path('/clientes')
             }
         }
