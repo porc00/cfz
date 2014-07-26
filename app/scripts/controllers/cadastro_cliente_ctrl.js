@@ -25,13 +25,13 @@ angular.module('frontendApp')
 
             $scope.salvarCliente = function(cliente) {
                 ClienteService.salvarCliente(cliente);
-                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' excluido com sucesso.');
+                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' cadastrado com sucesso!.');
                 $location.path('/clientes')
             }
 
             $scope.excluirCliente = function(cliente) {
                 ClienteService.excluirCliente(cliente);
-                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' excluido com sucesso.');
+                MessageService.adicionarMensagem('Cliente ' + cliente.nome + ' excluido com sucesso!.');
                 $location.path('/clientes')
             }
         }
